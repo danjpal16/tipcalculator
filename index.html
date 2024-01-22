@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Title</title>
+        <title>Tip Calculator App</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -22,7 +22,50 @@
         <header>
             <!-- place navbar here -->
         </header>
-        <main></main>
+        <main>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-6">
+                    <label for="totalBill">Total Bill:</label>
+                    <!-- Input for bill amount -->
+                    <input type="text" class="form-control" id="totalBill" placeholder="Enter total bill"/>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="numOfPeople">Number Of People:</label>
+                        <!-- Input for bill amount -->
+                        <input type="text" class="form-control" id="numOfPeople" placeholder="Enter number of people"/>
+                        </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <!-- Dropdown for Service Quality -->
+                        <label for="serviceQuality" class="form-label">Service Quality:</label>
+                        <select class="form-select" id="serviceQuality">
+                            <option value="Great">Great</option>
+                            <option value="Good">Good</option>
+                            <option value="Poor">Poor</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <!-- Button to trigger calculation -->
+                        <button class="btn btn-danger" onclick="calculateAndDisplay()">Calculate</button>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <!-- Results Section -->
+                        <h4>Results:</h4>
+                        <p id="tipResult"></p>
+                        <p id="totalBillResult"></p>
+                        <p id="amtPerPersonResult"></p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </main>
         <footer>
             <!-- place footer here -->
         </footer>
